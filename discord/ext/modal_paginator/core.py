@@ -531,9 +531,9 @@ class ModalPaginator(discord.ui.View):
         """
         base = f"{self.current_page + 1}/{len(self.modals)}"
         if self.current_modal:
-            return f"{self.current_modal.title}\n\n{base}"
+            return ""
         else:
-            return base
+            return ""
 
     @property
     def message(self) -> Optional[MessageT]:
