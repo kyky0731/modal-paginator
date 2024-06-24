@@ -859,7 +859,7 @@ class ModalPaginator(discord.ui.View):
         self,
         obj: Union[discord.abc.Messageable, discord.Interaction[Any], _commands.Context[Any]],
         *,
-        add_page_string: bool = True,
+        add_page_string: bool = False,
         return_message: bool = False,
         **kwargs: Any,
     ) -> Optional[MessageT]:
