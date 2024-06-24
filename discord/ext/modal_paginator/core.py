@@ -913,6 +913,7 @@ class ModalPaginator(discord.ui.View):
             if add_page_string:
                 if content:
                     kwargs["content"] = f"{self.page_string}\n\n{content}"
+                    print(kwargs["content"]
                 else:
                     kwargs["content"] = self.page_string
 
